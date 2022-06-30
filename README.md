@@ -6,7 +6,7 @@
 |-----------------------------------------|
 | If you **REALLY** have to watch a video thats unavailable, clone the repo, run `npm install && npm run dev` to not have videos blocked |
 
-![stage](https://img.shields.io/badge/stage-beta-important) ![server](https://img.shields.io/badge/server-sveltekit-yellow) ![ui](https://img.shields.io/badge/ui-smui-orange) ![version](https://img.shields.io/badge/version-0.1-red)
+![stage](https://img.shields.io/badge/stage-beta-important) ![server](https://img.shields.io/badge/server-sveltekit-yellow) ![ui](https://img.shields.io/badge/ui-smui-orange) ![version](https://img.shields.io/badge/version-0.1-red) ![issues](https://img.shields.io/github/issues/DeveloLongScript/DEST) ![forks](https://img.shields.io/github/forks/DeveloLongScript/DEST) ![stars](https://img.shields.io/github/stars/DeveloLongScript/DEST) ![licence](https://img.shields.io/github/license/DeveloLongScript/DEST)
 
 DEST is a video player, which compiles a topic into a video playlist.
 
