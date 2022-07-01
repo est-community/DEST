@@ -18,9 +18,7 @@
 		"smui-theme-light": "smui-theme compile static/smui.css -i src/theme",
 		"smui-theme-dark": "smui-theme compile static/smui-dark.css -i src/theme/dark"
 	},
-	"engines": {
-		"npm": ">=7"
-	},
+	
 	"browserslist": [
 		"Chrome 89"
 	],
