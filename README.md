@@ -1,7 +1,11 @@
 <p align="center">
     <img src="https://github.com/DeveloLongScript/DEST/raw/main/dest.png"
         height="130">
-        
+<p align="center">
+    <strong>DEST</strong>
+    <br>
+    <strong><a href="https://developers.google.com/youtube/iframe_api_reference">YouTube iFrame API</a> + <a href="https://www.electronjs.org/">Electron</a></strong>
+    
 | :exclamation:  Some videos are appearing not to load and to show `Video Unavailable, Watch on YouTube`, which I have done research on, but don't see any fix, if you have a fix, PR it.   |
 |-----------------------------------------|
 | If you **REALLY** have to watch a video thats unavailable, clone the repo, run `npm install && npm run dev` to not have videos blocked |
