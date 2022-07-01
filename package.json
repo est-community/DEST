@@ -12,7 +12,7 @@
 		"dev:electron": "electron src/electron.cjs",
 		"build": "cross-env NODE_ENV=production npm run build:svelte && npm run build:electron",
 		"build:svelte": "svelte-kit build",
-		"build:electron": "electron-builder -w --config build.config.json",
+		"build:electron": "electron-builder -wl --config build.config.json",
 		"start": "svelte-kit start",
 		"prepare": "svelte-kit sync && npm run smui-theme-light && npm run smui-theme-dark",
 		"smui-theme-light": "smui-theme compile static/smui.css -i src/theme",
