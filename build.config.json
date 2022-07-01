@@ -1,0 +1,14 @@
+{
+	"productName": "DEST",
+	"directories": {
+		"output": "dist"
+	},
+	"files": [
+		"src/electron.cjs",
+		"src/preload.cjs",
+		{
+			"from": "build",
+			"to": ""
+		}
+	]
+}
