@@ -36,8 +36,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: automated-${{ github.GITHUB_EVENT_NAME }}
-        release_name: ${{ github.GITHUB_EVENT_NAME }}
+        tag_name: automated-${{ env.GITHUB_EVENT_NAME }}
+        release_name: ${{ env.GITHUB_EVENT_NAME }}
         body: |
             # AUTOMATED RELEASE 
             This is **NOT** mean't to be used as a daily version. Its not recommend to use it nor your going to get any support using it.
