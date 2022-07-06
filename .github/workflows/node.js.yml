@@ -35,7 +35,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: automated
+        tag_name: automated-${{ env.GITHUB_JOB}}
         release_name: ${{ env.GITHUB_JOB }}
         draft: false
         prerelease: false
