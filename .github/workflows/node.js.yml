@@ -27,8 +27,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
-    - run: GH_TOKEN=${{ secrets.RELEASE_TOKEN }} && npm run build:lin
-    - run: ls
+    - run: npm run build:lin
+    - run: ls dist/
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
