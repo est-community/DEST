@@ -36,37 +36,39 @@
       
     </Row>
   </TopAppBar>
-  <AutoAdjust {topAppBar}><br>
-    <div class="text-title-mini">Your YouTube API Token</div>
-    <div><a class="text-mini">Will be used for searching results. Find out how to get one </a><a href="https://github.com"  target="_blank" class="text-mini">here</a><a class="text-mini">.</a></div><br>
-    <div class="columns margins">
-        <div>
-          <Textfield variant="outlined" bind:value={valueA} label="API Token">
-            <HelperText slot="helper">YouTube API Token</HelperText>
-          </Textfield>
-        </div>
-    </div><br>
-    <div class="text-title-mini">Type of Videos</div>
-    <a class="text-mini">What catagory of videos would you like, or create your own!</a><br>
-    <Set chips={choices} let:chip choice bind:selected>
-        {#if chip === 'Add'}
-         <Chip {chip} on:click={() => {
-            open = true;
-        }}>
-            <Text>{chip}</Text>
-            <TrailingIcon class="material-icons">add</TrailingIcon>
-        </Chip>
-        {:else}
-        <Chip {chip} >
-            <Text>{chip}</Text>
-        </Chip>
-       {/if}
-      </Set><br>
-    <Button on:click={() => saveJSON()}>Save</Button>
-    <Button on:click={() => {
-      saveJSON()
-      location.href = '/'
-    }}>Save and go home</Button>
+  <AutoAdjust {topAppBar}>
+    <div style="margin: 17px">
+      <div class="text-title-mini">Your YouTube API Token</div>
+      <div><a class="text-mini">Will be used for searching results. Find out how to get one </a><a href="https://github.com"  target="_blank" class="text-mini">here</a><a class="text-mini">.</a></div><br>
+      <div class="columns margins">
+          <div>
+            <Textfield variant="outlined" bind:value={valueA} label="API Token">
+              <HelperText slot="helper">YouTube API Token</HelperText>
+            </Textfield>
+          </div>
+      </div><br>
+      <div class="text-title-mini">Type of Videos</div>
+      <a class="text-mini">What category of videos would you like, or create your own!</a><br>
+      <Set chips={choices} let:chip choice bind:selected>
+          {#if chip === 'Add'}
+          <Chip {chip} on:click={() => {
+              open = true;
+          }}>
+              <Text>{chip}</Text>
+              <TrailingIcon class="material-icons">add</TrailingIcon>
+          </Chip>
+          {:else}
+          <Chip {chip} >
+              <Text>{chip}</Text>
+          </Chip>
+        {/if}
+        </Set><br>
+      <Button on:click={() => saveJSON()}>Save</Button>
+      <Button on:click={() => {
+        saveJSON()
+        location.href = '/'
+      }}>Save and go home</Button>
+    </div>
   </AutoAdjust>
 
   <title>DEST - Settings</title>
